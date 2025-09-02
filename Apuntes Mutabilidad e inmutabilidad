@@ -1,0 +1,108 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNKVTUdPpdFQZuTO0jIRVmM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Aldana-777/PROGCOM-B/blob/main/Apuntes%20Mutabilidad%20e%20inmutabilidad\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Mutabilidad\n",
+        "Cada vez q se genera una variable y se almacena en un nuevo pedazo de memoria (dejar un espacio para conertirlo en otro) Entonces las variables iniciales mutan y se transforman: variables."
+      ],
+      "metadata": {
+        "id": "M1IJce6GUM_e"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 2\n",
+        "b = a\n",
+        "print (a)\n",
+        "print (b)\n",
+        "a = 5\n",
+        "print(a)\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kZuFzK7TUT7s",
+        "outputId": "6b511542-395b-4557-84e1-adbd13ee3be6"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "2\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Inmutabilidad\n",
+        "Combierte el tipo de dato como cambios, pero no se guardan las anteriores sin borrar la infrmacion: lista, diccionario, Marca ERROR. (NO CREA NUEVO ESPACIO EN LA MEMORIA)"
+      ],
+      "metadata": {
+        "id": "PZb4C_mEUtVU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista_1=[1,2,3,4]\n",
+        "print(lista_1)\n",
+        "lista_1.append(5)\n",
+        "print(lista_1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CUZ-cJLoU8v8",
+        "outputId": "b96e91c9-0278-4e47-9162-1064d0ac002c"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4]\n",
+            "[1, 2, 3, 4, 5]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
